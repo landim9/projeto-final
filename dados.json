@@ -1,0 +1,111 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "João",
+            "email": "jao@js.com",
+            "senha": "12345",
+            "cargo": "Sócio e atendente",
+            "tipo": "admin"
+        },
+        {
+            "id": 2,
+            "nome": "Jaqueline",
+            "email": "jak@js.com",
+            "senha": "12345",
+            "cargo": "Proprietaria",
+            "tipo": "admin"
+        },
+        {
+            "id": 3,
+            "nome": "Rafael",
+            "email": "rafa@js.com",
+            "senha": "12345",
+            "cargo": "Açougueiro",
+            "tipo": "comum"
+        }
+    ],
+    "itens": [
+        {
+            "id": 1,
+            "nome": "LINGUIÇA CALABRESA",
+            "descricao": "Feito exclusivamente de carne suína, curado, adicionado de ingredientes, devendo ter o sabor picante característico da pimenta calabresa.",
+            "tipo": "Serviço",
+            "img": "./assets/LinCalabresa.png",
+            "preco": 16.9
+        },
+        {
+            "id": 2,
+            "nome": "LIGUIÇA TOSCANA",
+            "descricao": "Temperada e feita com os melhores cortes suínos, a Linguiça Toscana é muito fácil de preparar na grelha ou como aperitivo. Muito saborosa, tem lugar garantido em um bom churrasco com os amigos e com a família.",
+            "tipo": "Serviço",
+            "img": "./assets/LinToscana.png",
+            "preco": 15.9
+        },
+        {
+            "id": 3,
+            "nome": "LINGUIÇA CUIABANA",
+            "descricao": "Produzida com os melhores cortes suínos, a Linguiça Cuiabana Suína é uma famosa iguaria que leva queijo minas frescal e temperos especiais em sua receita.",
+            "tipo": "Serviço",
+            "img": ".assets/linCuiabana.png",
+            "preco": 29.9
+        },
+        {
+            "id": 4,
+            "nome": "FRANGO A PASSARINHO",
+            "descricao": "Com cortes selecionados e de sabor inconfundível, o Frango a Passarinho fica crocante por fora e macio por dentro.",
+            "tipo": "Produto",
+            "img": "./assets",
+            "preco": 9.9
+        },
+        {
+            "id": 5,
+            "nome": "SOBRECOXA DE FRANGO",
+            "descricao": "Cheia de sabor e muito macia, a Sobrecoxa de Frango é ideal para quem busca uma alimentação saborosa e fácil de preparar.",
+            "tipo": "Produto",
+            "img": "",
+            "preco": 12.9
+        },
+        {
+            "id": 6,
+            "nome": "PEITO DE FRANGO",
+            "descricao": "o Peito de Frango é leve, saudável, muito saboroso e prático de preparar. ",
+            "tipo": "Produto",
+            "img": "",
+            "preco": 17.9
+        },
+        {
+            "id": 7,
+            "nome": "ALCATRA",
+            "descricao": "A Alcatra é um corte muito macio e com pouca gordura. Já vem limpa e pronta para ser preparada",
+            "tipo": "Produto",
+            "img": "",
+            "preco": 38.9
+        },
+        {
+        "id": 8,
+            "nome": "ACEM",
+            "descricao": "O Acém é um corte bem marmorizado, ótimo para fazer no dia a dia, com muito sabor e suculência. ",
+            "tipo": "Produto",
+            "img": "",
+            "preco": 25.9
+        },
+        {
+        "id": 9,
+            "nome": "CONTRA FILÉ",
+            "descricao": "Presença garantida nos tradicionais churrascos brasileiros, o Contra Filé é uma peça muito versátil e macia ",
+            "tipo": "Produto",
+            "img": "",
+            "preco": 38.9
+        },
+        {
+          "id": 10,
+            "nome": "PICANHA",
+            "descricao": "Proveniente de gado selecionado, maturada e tenderizada, a Picanha vem sempre em peças menores, garantindo um toque de nobreza ao seu sabor. ",
+            "tipo": "Produto",
+            "img": "",
+            "preco": 77.9
+        }
+    ]
+    
+}
