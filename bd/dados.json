@@ -1,0 +1,228 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "João",
+            "email": "jao@js.com",
+            "senha": "1234",
+            "cargo": "Sócio e atendente",
+            "tipo": "admin"
+        },
+        {
+            "id": 2,
+            "nome": "Jaqueline",
+            "email": "jak@js.com",
+            "senha": "1234",
+            "cargo": "Proprietaria",
+            "tipo": "admin"
+        },
+        {
+            "id": 3,
+            "nome": "Rafael",
+            "email": "rafa@js.com",
+            "senha": "1234",
+            "cargo": "Açougueiro",
+            "tipo": "admin"
+        }
+    ],
+    "itens": [
+        {
+            "id": 1,
+            "nome": "LINGUIÇA CALABRESA",
+            "descricao": "Feito exclusivamente de carne suína, curado, adicionado de ingredientes, devendo ter o sabor picante característico da pimenta calabresa.",
+            "tipo": "Serviço",
+            "img": "assets/img/LinCalabresa.png",
+            "preco": 16.9
+        },
+        {
+            "id": 2,
+            "nome": "LIGUIÇA TOSCANA",
+            "descricao": "Temperada e feita com os melhores cortes suínos, a Linguiça Toscana é muito fácil de preparar na grelha ou como aperitivo. Muito saborosa, tem lugar garantido em um bom churrasco com os amigos e com a família.",
+            "tipo": "Serviço",
+            "img": "assets/img/LinToscana.png",
+            "preco": 15.9
+        },
+        {
+            "id": 3,
+            "nome": "LINGUIÇA CUIABANA",
+            "descricao": "Produzida com os melhores cortes suínos, a Linguiça Cuiabana Suína é uma famosa iguaria que leva queijo minas frescal e temperos especiais em sua receita.",
+            "tipo": "Serviço",
+            "img": "assets/img/linCuiabana.png",
+            "preco": 29.9
+        },
+        {
+            "id": 4,
+            "nome": "FRANGO A PASSARINHO",
+            "descricao": "Com cortes selecionados e de sabor inconfundível, o Frango a Passarinho fica crocante por fora e macio por dentro.",
+            "tipo": "Produto",
+            "img": "assets/img/franpassa.png",
+            "preco": 9.9
+        },
+        {
+            "id": 5,
+            "nome": "SOBRECOXA DE FRANGO",
+            "descricao": "Cheia de sabor e muito macia, a Sobrecoxa de Frango é ideal para quem busca uma alimentação saborosa e fácil de preparar.",
+            "tipo": "Produto",
+            "img": "assets/img/Coxasobrecoxa.png",
+            "preco": 12.9
+        },
+        {
+            "id": 6,
+            "nome": "PEITO DE FRANGO",
+            "descricao": "o Peito de Frango é leve, saudável, muito saboroso e prático de preparar. ",
+            "tipo": "Produto",
+            "img": "assets/img/PeitoFran.png",
+            "preco": 17.9
+        },
+        {
+            "id": 7,
+            "nome": "ALCATRA",
+            "descricao": "A Alcatra é um corte muito macio e com pouca gordura. Já vem limpa e pronta para ser preparada",
+            "tipo": "Produto",
+            "img": "assets/img/Alcatra.png",
+            "preco": 38.9
+        },
+        {
+        "id": 8,
+            "nome": "ACEM",
+            "descricao": "O Acém é um corte bem marmorizado, ótimo para fazer no dia a dia, com muito sabor e suculência. ",
+            "tipo": "Produto",
+            "img": "assets/img/acem.png",
+            "preco": 25.9
+        },
+        {
+        "id": 9,
+            "nome": "CONTRA FILÉ",
+            "descricao": "Presença garantida nos tradicionais churrascos brasileiros, o Contra Filé é uma peça muito versátil e macia ",
+            "tipo": "Produto",
+            "img": "assets/img/contrafile.png",
+            "preco": 38.9
+        },
+        {
+        "id": 10,
+            "nome": "PICANHA",
+            "descricao": "Proveniente de gado selecionado, maturada e tenderizada, a Picanha vem sempre em peças menores, garantindo um toque de nobreza ao seu sabor. ",
+            "tipo": "Produto",
+            "img": "assets/img/picanha.png",
+            "preco": 77.9
+        },
+
+        {
+            "id": 11,
+            "nome": "BIFE ANCHO",
+            "descricao": "Considerado um clássico da parrilla argentina, o Bife Ancho 481 é uma carne extraída na frente da região do contrafilé, entre a 2ª e 6ª vértebras. Por ser entremeada por gordura, seu elevado marmoreio garante um sabor mais intenso de churrasco. ",
+            "tipo": "Produto",
+            "img": "assets/img/bifeancho.png",
+            "preco": 189.9
+        },
+
+        {
+            "id": 12,
+            "nome": "PRIME RIB ANGUS",
+            "descricao": "O corte de carne Prime Rib é um dos mais requintados e sofisticados. Feito a partir da região do peito do boi, ele traz uma carne mais macia, suculenta e com perfeito marmoreio, o que garante um sabor único. ",
+            "tipo": "Produto",
+            "img": "assets/img/prime rib.png",
+            "preco": 155.0
+        }
+    ],
+
+    "vendas": [
+        {
+            "id": 1,
+            "data": "2023-11-05T08:50:00.000Z",
+            "usuario": 2,
+            "item": 1,
+            "quantidade": 1,
+            "valorUnitario": 16.9
+        },
+        {
+            "id": 2,
+            "data": "2023-11-05T09:35:00.000Z",
+            "usuario": 2,
+            "item": 2,
+            "quantidade": 1,
+            "valorUnitario": 15.9
+        },
+        {
+            "id": 3,
+            "data": "2023-11-05T12:00:00.000Z",
+            "usuario": 2,
+            "item": 3,
+            "quantidade": 1,
+            "valorUnitario": 29.9
+        },
+        {
+            "id": 4,
+            "data": "2023-11-05T08:50:00.000Z",
+            "usuario": 2,
+            "item": 6,
+            "quantidade": 1,
+            "valorUnitario": 9.9
+        },
+        {
+            "id": 5,
+            "data": "2023-11-06T08:20:00.000Z",
+            "usuario": 3,
+            "item": 5,
+            "quantidade": 2,
+            "valorUnitario": 12.9
+        },
+        {
+            "id": 6,
+            "data": "2023-11-06T10:40:00.000Z",
+            "usuario": 3,
+            "item": 4,
+            "quantidade": 1,
+            "valorUnitario": 17.9
+        },
+        {
+            "id": 7,
+            "data": "2023-11-06T11:50:00.000Z",
+            "usuario": 3,
+            "item": 4,
+            "quantidade": 2,
+            "valorUnitario": 38.9
+        },
+        {
+            "id": 8,
+            "data": "2023-11-06T12:50:00.000Z",
+            "usuario": 2,
+            "item": 6,
+            "quantidade": 1,
+            "valorUnitario": 25.9
+        },
+        {
+            "id": 9,
+            "data": "2023-11-07T08:50:00.000Z",
+            "usuario": 2,
+            "item": 7,
+            "quantidade": 1,
+            "valorUnitario": 38.9
+        },
+        {
+            "id": 10,
+            "data": "2023-11-07T10:20:00.000Z",
+            "usuario": 2,
+            "item": 2,
+            "quantidade": 1,
+            "valorUnitario": 77.9
+        },
+        {
+            "id": 11,
+            "data": "2023-11-07T10:45:00.000Z",
+            "usuario": 3,
+            "item": 1,
+            "quantidade": 2,
+            "valorUnitario": 189.9
+        },
+        {
+            "id": 12,
+            "data": "2023-11-07T11:05:00.000Z",
+            "usuario": 1,
+            "item": 3,
+            "quantidade": 1,
+            "valorUnitario": 155.0
+        }
+    ]
+    
+}
