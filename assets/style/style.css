@@ -1,5 +1,5 @@
 .oculto {
-    display: none;
+    display: none!important;
 }
 
 * {
@@ -9,7 +9,7 @@
 }
 
 :root {
-    --primary-color: #007bff;
+    --primary-color: #8d8d8d;
     --secondary-color: #6c757d;
     --success-color: #28a745;
     --info-color: #17a2b8;
@@ -23,16 +23,19 @@
 
 }
 
+main {
+    overflow-x: hidden;
+}
+
 .container-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: rgb(59, 53, 94);
     color: white;
     text-align: center;
     font-size: 2em;
     height: 15vh;
-    gap: 250px;
 }
 
 .header-content {
@@ -63,7 +66,6 @@ nav img {
     width: 280px;
     color: #565A90;
     position: relative;
-    top: 5px;
 }
 
 .input-file::file-selector-button {
@@ -166,8 +168,8 @@ input[type=number] input[type=number]::placeholder {
 
 .close-login {
     position: relative;
-    left: 20em;
-    bottom: 3em;
+        left: 19em;
+        bottom: 3em;
 }
 
 .input {
@@ -229,5 +231,49 @@ input[type=number] input[type=number]::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 430px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba
+    (0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border: #000 1px solid;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #757575;
+    text-align: center;
+
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 400px 400px 400px 400px;
+    margin: 50px;
     gap: 50px;
 }
