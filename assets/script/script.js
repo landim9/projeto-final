@@ -37,7 +37,7 @@ function download() {
     if (dados.usuarios.length > 0) {
         let a = document.createElement("a")
         a.href = "data:," + JSON.stringify(dados)
-        a.download = "dados.json"
+        a.download = "bd/dados.json"
         a.click();
         alert("Dados salvos pasta padrão de downloads como [dados.json]")
     } else {
@@ -52,7 +52,7 @@ function preencherCards() {
 
 			<div id="model0" class="card">
 				<h2 class="card-title">Nome</h2>
-				<p class="card-text">Tipo e Descrição</p>
+				<p class="card-text"></p>
 				<img src="../assets/noimage.jpg"
 					alt="Imagem Padrão" class="img">
 					<button class="btn btn-secondary" data-toggle="modal" data-target="#modalVender">Vender</button>
@@ -64,7 +64,6 @@ function preencherCards() {
         const model = document.getElementById('model0').cloneNode(true);
         model.setAttribute('id', 'model' + item.id);
         model.querySelector('.card-title').innerHTML = item.nome;
-        model.querySelector('.card-text').innerHTML = "<B>" + item.tipo + ":</B>";
         model.querySelector('.card-text').innerHTML += "<br/>" + item.descricao;
         model.querySelector('.img').src = item.img == "" ? "../assets/noimage.jpg" : item.img;
         model.querySelector('.card-footer').innerHTML = `R$ ${parseFloat(item.preco).toFixed(2)}`;
@@ -231,8 +230,24 @@ function getNomeItem(id) {
     return nome;
 }
 
+function getHorario(){
+    let data = new Date();
+    let dia = data.getDate();
+    let mes = data.getMonth() + 1;
+    let ano = data.getFullYear();
+    let hora = data.getHours();
+    let min = data.getMinutes();
+
+    
+}
+
 function aparecer(){
     let form = document.querySelector("#modalLogin");
     form.classList.remove('oculto')
 
+}
+
+function remover(){
+    let form = document.querySelector("#modalLogin");
+    form.classList.toggle('oculto')
 }

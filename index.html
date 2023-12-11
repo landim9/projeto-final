@@ -15,15 +15,15 @@
         <div class="header-content">
             <h1>Açougue do Calabreso</h1>
             <nav>
-                    <input id="abrir" type="file" class="input-file" accept=".json">
-                    <button id="login" type="button" onclick="aparecer()" class="btn-login oculto" data-toggle="modal"
-                        data-target="#modalLogin">Fazer Login</button>
-                    <button id="sair" type="button" class="btn-sair oculto" onclick="logout()">Sair</button>
-                    <button id="salvar" class="btn-salvar oculto" onclick="download()">Salvar</button>
+                <input id="abrir" type="file" class="input-file" accept=".json">
+                <button id="login" type="button" onclick="aparecer()" class="btn-login oculto" data-toggle="modal"
+                    data-target="#modalLogin">Fazer Login</button>
+                <button id="sair" type="button" class="btn-sair oculto" onclick="logout()">Sair</button>
+                <button id="salvar" class="btn-salvar oculto" onclick="download()">Salvar</button>
             </nav>
 
         </div>
-        <div id="boasVindas" class="Welcome oculto">
+        <div id="boasVindas" class="Welcome">
             <h3 id="nome"></h3>
             <div>
                 <button id="item" type="button" class="btn-add oculto" data-toggle="modal"
@@ -53,7 +53,8 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Fazer Login</h5>
-                    <button type="button" class="close-login" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close-login" data-dismiss="modal" onclick="remover()"
+                        aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -81,12 +82,12 @@
         </div>
     </div>
     <!-- Modal Vender -->
-    <div class="modal fade" id="modalVender" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade " id="modalVender" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Registrar Venda</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close-vender" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -94,16 +95,23 @@
                     <div class="modal-body">
                         <input type="hidden" name="id">
                         <div class="form-group">
-                            <label for="quantidade">Quantidade</label>
-                            <input type="number" class="form-control" name="quantidade" value="1" required>
+                            <div class="input">
+                                <input type="number" class="form-control" name="quantidade" value="1" required>
+                                <label for="quantidade">Quantidade</label>
+                            </div>
+
                         </div>
                         <div class="form-group">
-                            <label for="preco">Preço R$</label>
-                            <input type="number" class="form-control" name="preco" step="0.1" required>
+                            <div class="input">
+                                <input type="number" class="form-control" name="preco" step="0.1" required>
+                                <label for="preco">Preço R$</label>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="total">Total</label>
-                            <input type="number" class="form-control" name="total" disabled>
+                            <div class="input">
+                                <input type="number" class="form-control" name="total" disabled>
+                                <label for="total"></label>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -115,7 +123,8 @@
         </div>
     </div>
     <!-- Modal Vendas -->
-    <div class="modal fade" id="modalVendas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade oculto" id="modalVendas" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
@@ -149,12 +158,12 @@
         </div>
     </div>
     <!-- Modal Produto -->
-    <div class="modal fade" id="modalItem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade oculto" id="modalItem" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Cadastrar novo Produto</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close-produto" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
