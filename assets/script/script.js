@@ -251,3 +251,8 @@ function remover(){
     let form = document.querySelector("#modalLogin");
     form.classList.toggle('oculto')
 }
+
+function aparecerModal(){
+    let aaa = document.querySelector("#modalVender")
+    aaa.classList.toggle('oculto')
+}

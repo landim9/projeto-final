@@ -119,7 +119,7 @@ input[type=number] input[type=number]::placeholder {
 .Welcome {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .btn-login {
@@ -335,4 +335,12 @@ input[type=number] input[type=number]::placeholder {
     display: flex;
     position: relative;
     left: 50%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    font-size: 24px;
 }
