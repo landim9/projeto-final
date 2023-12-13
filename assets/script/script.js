@@ -55,7 +55,7 @@ function preencherCards() {
 				<p class="card-text"></p>
 				<img src="../assets/noimage.jpg"
 					alt="Imagem Padrão" class="img">
-					<button class="btn btn-secondary" data-toggle="modal" data-target="#modalVender">Vender</button>
+					<button class="btn btn-secondary oculto" data-toggle="modal" data-target="#modalVender">Vender</button>
                     <button class="btn btn-danger oculto">Excluir</button>
 					<h4 class="card-footer">Preço</h4>
 			</div>
@@ -69,10 +69,9 @@ function preencherCards() {
         model.querySelector('.card-footer').innerHTML = `R$ ${parseFloat(item.preco).toFixed(2)}`;
         model.querySelector('.btn-secondary').setAttribute("onclick", `preencherTotal(${i})`);
         model.querySelector('.btn-danger').setAttribute("onclick", `excluirItem(${i})`);
-        if (usuario.email == undefined) {
-            model.querySelector('.btn').classList.add("oculto");
-        } else if (usuario.tipo == "admin") {
+        if (usuario.tipo == "admin") {
             model.querySelector('.btn-danger').classList.remove("oculto");
+            model.querySelector('.btn-secondary').classList.remove("oculto");
         }
         container.appendChild(model);
     });
@@ -86,11 +85,12 @@ formLogin.addEventListener("submit", e => {
     dados.usuarios.forEach(user => {
         if (user.email == formLogin.email.value && user.senha == formLogin.senha.value) {
             usuario = user;
+            console.log(usuario)
             login.classList.add("oculto");
             salvar.classList.remove("oculto");
             sair.classList.remove("oculto");
             if (usuario.tipo == "admin") item.classList.remove("oculto");
-            $('#modalLogin').modal('hide');
+            // $('#modalLogin').modal('hide');
             preencherCards();
             bemVindo();
             encontrado = true;
@@ -170,7 +170,7 @@ function preencherVendas() {
             <td>${venda.quantidade}</td>
             <td>${venda.valorUnitario}</td>
             <td>${venda.quantidade * venda.valorUnitario}</td>
-            ${usuario.tipo == "admin" ? "<td><button class='btn btn-danger' onclick='excluirVenda(" + venda.id + ")'>-</button></td>" : ""}`;
+            ${usuario.tipo == "Proprietaria" ? "<td><button class='btn btn-danger' onclick='excluirVenda(" + venda.id + ")'>-</button></td>" : ""}`;
             vendas.appendChild(linha);
             total += venda.quantidade * venda.valorUnitario;
         }
@@ -253,6 +253,10 @@ function remover(){
 }
 
 function aparecerModal(){
-    let aaa = document.querySelector("#modalVender")
-    aaa.classList.toggle('oculto')
+    let aaa = document.querySelector("#modalItem")
+    aaa.classList.remove('oculto')
+}
+
+function apagaModal(e){
+ e.parentElement.parentElement.parentElement.parentElement.classList.toggle('oculto')
 }

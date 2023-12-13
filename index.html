@@ -26,7 +26,7 @@
         <div id="boasVindas" class="Welcome">
             <h3 id="nome"></h3>
             <div>
-                <button id="item" type="button" class="btn-add oculto" data-toggle="modal"
+                <button id="item" type="button" onclick="aparecerModal()"class="btn-add oculto" data-toggle="modal"
                     data-target="#modalItem">Adicionar Itens</button>
                 <button type="button" class="btn-listar oculto" data-toggle="modal" data-target="#modalVendas"
                     onclick="preencherVendas()">Listar Vendas</button>
@@ -39,7 +39,7 @@
                 <h2>Trabalhando com dados locais</h2>
                 <p>Sistema de exemplo para aulas de Web Design, com HTML, BootStrap e JavaScript</p>
                 <p>Para executar o sistema faça upload do arquivo JSON com dados iniciais de teste, seguindo o modelo a
-                    seguir: <a download href="../bd/dados.json">dados.json</a>
+                    seguir: <a download href="bd/dados.json">dados.json</a>
                 </p>
                 <p>Faça download do modelo e carrege o sistema com ele clicando em <b>Escolher arquivo</b></p>
             </div>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Acessar</button>
+                        <button type="submit" class="btn btn-primary" onclick="remover()">Acessar</button>
                     </div>
                 </form>
             </div>
@@ -129,7 +129,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Vendas do Dia</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close"  data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -163,7 +163,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Cadastrar novo Produto</h5>
-                    <button type="button" class="close-produto" data-dismiss="modal" aria-label="Close">
+                    <button type="button" onclick="apagaModal(this)" class="close-produto" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
