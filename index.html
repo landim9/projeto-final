@@ -26,7 +26,7 @@
         <div id="boasVindas" class="Welcome">
             <h3 id="nome"></h3>
             <div>
-                <button id="item" type="button" onclick="aparecerModal()"class="btn-add oculto" data-toggle="modal"
+                <button id="item" type="button" onclick="aparecerModal()" class="btn-add oculto" data-toggle="modal"
                     data-target="#modalItem">Adicionar Itens</button>
                 <button type="button" class="btn-listar oculto" data-toggle="modal" data-target="#modalVendas"
                     onclick="preencherVendas()">Listar Vendas</button>
@@ -82,7 +82,8 @@
         </div>
     </div>
     <!-- Modal Vender -->
-    <div class="modal fade oculto" id="modalVender" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade oculto" id="modalVender" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -129,7 +130,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Vendas do Dia</h5>
-                    <button type="button" class="close"  data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -163,40 +164,45 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Cadastrar novo Produto</h5>
-                    <button type="button" onclick="apagaModal(this)" class="close-produto" data-dismiss="modal" aria-label="Close">
+                    <button type="button" onclick="apagaModal(this)" class="close-produto" data-dismiss="modal"
+                        aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <form id="formItem">
                     <div class="modal-body">
                         <div class="form-group">
-                            <label for="nome">Nome do ítem</label>
-                            <input type="text" class="form-control" name="nome" placeholder="Nome do ítem" required>
+                            <div class="input">
+                                <label for="nome">Nome do ítem</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+
                         </div>
                         <div class="form-group">
-                            <label for="descricao">Descrição</label>
-                            <textarea class="form-control" name="descricao"
-                                placeholder="Digite uma descrição para o produto ou serviço" required></textarea>
+                            <div class="input">
+                                <label for="descricao">Descrição</label>
+                                <textarea class="form-control" id="descricao" name="descricao"
+                                    placeholder="" required></textarea>
+                            </div>
+
                         </div>
                         <div class="form-group">
-                            <label for="tipo">Tipo</label>
-                            <select class="form-control" name="tipo">
-                                <option value="Produto">Produto</option>
-                                <option value="Serviço">Serviço</option>
-                            </select>
+                            <div class="input">
+                                <label for="img">Link da imagem</label>
+                                <textarea class="form-control" id="img" name="img"
+                                    placeholder=""></textarea>
+                            </div>
+
                         </div>
                         <div class="form-group">
-                            <label for="img">Link da imagem</label>
-                            <textarea class="form-control" name="img"
-                                placeholder="Cole aqui o link de uma imagem de ilustração"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="preco">Preço R$</label>
-                            <input type="number" class="form-control" name="preco" step="0.1" required>
+                            <div class="input">
+                                <label for="preco">Preço R$</label>
+                                <input type="number" class="form-control" id="preco" name="preco" step="0.1" required>
+                            </div>
+
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                         <button type="submit" class="btn btn-primary">Concluir cadastro</button>
                     </div>
                 </form>

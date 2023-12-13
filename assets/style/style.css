@@ -183,11 +183,11 @@ input[type=number] input[type=number]::placeholder {
 .input {
     font-family: 'Segoe UI', sans-serif;
     margin: 1em 0 1em 0;
-    max-width: 190px;
+    max-width: 290px;
     position: relative;
 }
 
-.input input {
+.input input, textarea {
     font-size: 100%;
     padding: 0.8em;
     outline: none;
@@ -219,6 +219,8 @@ input[type=number] input[type=number]::placeholder {
 .inputGroup :is(input:focus, input:valid) {
     border-color: rgb(37, 37, 211);
 }
+
+
 
 .modal-title {
     display: flex;
@@ -316,15 +318,18 @@ input[type=number] input[type=number]::placeholder {
 }
 
 #modalItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30vw;
-    height: 30vh;
+    height: 75vh;
     border: #000 1px solid;
     border-radius: 5px;
     position: fixed;
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
-    background-color: var(--info-color);
+    background-color: var(--primary-color);
 }
 
 .close-vender {
@@ -344,4 +349,10 @@ input[type=number] input[type=number]::placeholder {
     position: absolute;
     top: 30%;
     font-size: 24px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

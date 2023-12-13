@@ -6,7 +6,7 @@
             "email": "jao@js.com",
             "senha": "1234",
             "cargo": "Sócio e atendente",
-            "tipo": "admin"
+            "tipo": "usuario"
         },
         {
             "id": 2,

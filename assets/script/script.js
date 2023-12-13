@@ -125,6 +125,7 @@ function preencherTotal(indice) {
     let quantidade = parseInt(formVender.quantidade.value);
     let preco = parseFloat(formVender.preco.value);
     formVender.total.value = (quantidade * preco).toFixed(2);
+    formVender.classList.remove('oculto')
 }
 
 formVender.addEventListener("change", () => {
@@ -145,7 +146,7 @@ formVender.addEventListener("submit", e => {
         valorUnitario: parseFloat(formVender.preco.value),
     }
     dados.vendas.push(venda);
-    $('#modalVender').modal('hide');
+
     alert("Venda registrada com sucesso, não se esqueça de salvar os dados.");
 });
 
@@ -185,12 +186,12 @@ formItem.addEventListener("submit", e => {
         id: dados.itens[dados.itens.length - 1].id + 1,
         nome: formItem.nome.value,
         descricao: formItem.descricao.value,
-        tipo: formItem.tipo.value,
+        // tipo: formItem.tipo.value,
         preco: parseFloat(formItem.preco.value),
         img: formItem.img.value,
     }
     dados.itens.push(item);
-    $('#modalItem').modal('hide');
+    // $('#modalItem').modal('hide');
     alert("Ítem criado com sucesso, não se esqueça de salvar os dados.");
     preencherCards();
 });
